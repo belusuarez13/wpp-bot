@@ -14,9 +14,9 @@ client.on('ready', () => {
     console.log('WhatsApp Bot is ready!');
     
     // Schedule weekly reminder (e.g., every Monday at 9 AM)
-    // cron.schedule('0 9 * * 1', () => {
+    cron.schedule('0 8 * * *', () => {
         sendReminder();
-    // });
+    });
 });
 
 async function sendReminder() {
